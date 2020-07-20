@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Parallax in Space</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <p>
+          <i class="fas fa-info-circle"></i> Move your phone to control the
+          parallax. On your computer, use your mouse.
+        </p>
+        <button id="settings-btn"><i class="fas fa-cog"></i></button>
+        <div id="settings-panel">
+          <p>Planet Green</p>
+          <input
+            type="range"
+            name=""
+            id="range-p1"
+            value="3"
+            orient="vertical"
+          />
+          <hr />
+          <p>Planet Purple</p>
+          <input
+            type="range"
+            name=""
+            id="range-p2"
+            value="100"
+            orient="vertical"
+          />
+        </div>
+      </div>
+      <div id="scene">
+        <div class="first-star-layer" data-depth="0.1"></div>
+        <div class="planet-one" data-depth="0.3"></div>
+        <div class="second-star-layer" data-depth="0.4"></div>
+        <div class="text-layer">SPACE</div>
+        <div class="third-star-layer" data-depth="0.6"></div>
+        <div class="planet-two" data-depth="0.9"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

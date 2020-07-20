@@ -25,6 +25,7 @@ body {
 }
 
 .banner {
+  padding: 5px;
   width: auto;
   position: relative;
   display: flex;
@@ -62,10 +63,9 @@ body {
   top: 100%;
   position: absolute;
   color: white;
-  background-color: #2e2d2d;
+  background-color: rgba(46, 45, 45, 0.9);
   display: none;
   z-index: 100;
-  transition: display 0.2s linear;
 }
 
 .banner input {
